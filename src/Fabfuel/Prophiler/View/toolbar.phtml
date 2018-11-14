@@ -91,7 +91,11 @@ use Fabfuel\Prophiler\Toolbar\Formatter\BenchmarkFormatter; ?>
         });
     });
     // load highligh js if defined
-    if (typeof hljs !== "undefined") {
-        hljs.initHighlightingOnLoad();
+    if (typeof hljs !== "undefined" && typeof window["$"] !== "undefined") {
+        $(document).ready(function() {
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+        });
     }
 </script>
