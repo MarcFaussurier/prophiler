@@ -90,4 +90,8 @@ use Fabfuel\Prophiler\Toolbar\Formatter\BenchmarkFormatter; ?>
             el.innerHTML = JSON.stringify(JSON.parse(el.innerHTML), null, '    ');
         });
     });
+    // load highligh js if defined
+    if (typeof hljs !== "undefined") {
+        hljs.initHighlightingOnLoad();
+    }
 </script>
