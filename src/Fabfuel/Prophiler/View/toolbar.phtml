@@ -2,15 +2,12 @@
 /**
  * @var \Fabfuel\Prophiler\ProfilerInterface $profiler
  */
+use Fabfuel\Prophiler\Toolbar\Formatter\BenchmarkFormatter; ?>
 
-use Fabfuel\Prophiler\Toolbar\Formatter\BenchmarkFormatter;
-
-?><style>
-    <?php echo file_get_contents(__DIR__ . '/css/screen.css'); ?>
-</style>
-
-<div id="prophiler">
-
+<div data-id="debugBar" id="prophiler">
+    <style>
+        <?php echo file_get_contents(__DIR__ . '/css/screen.css'); ?>
+    </style>
     <div class="toolbar">
         <h1 class="logo">IPOLITIC NAWP</h1>
 
