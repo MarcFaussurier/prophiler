@@ -60,7 +60,7 @@ use Fabfuel\Prophiler\Toolbar\Formatter\BenchmarkFormatter;
                         <a href="javascript:void(0);" onclick="return $('#prophiler-datacollector-<?= md5($dataCollector->getTitle()) ?>').slideToggle('fast');"><span class="label color-5"><?= $dataCollector->getIcon() ?> <?= $dataCollector->getTitle() ?></span></a>
                     </li>
                 <?php endforeach; ?>
-                <li><input name="disableJavascriptBtn" type="checkbox"> Disable javascript</li>
+                <li><input name="disableJavascriptBtn" type="checkbox"> Disable client side rendering</li>
                 <li><input name="disableCookiesBtn" type="checkbox"> Disable cookies</li>
             </ul>
         </nav>
