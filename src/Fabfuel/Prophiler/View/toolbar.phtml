@@ -8,6 +8,14 @@ use Fabfuel\Prophiler\Toolbar\Formatter\BenchmarkFormatter; ?>
 <div data-id="debugBar" id="prophiler">
     <style>
         <?php echo file_get_contents(__DIR__ . '/css/screen.css'); ?>
+        #prophiler .toolbar nav ul li {
+            padding-top: 5px !important;
+            padding-left: 10px !important;
+            float: left;
+            list-style: none;
+            /* width: 13%; */
+            padding-right: 10px !important;
+        }
     </style>
     <div class="toolbar">
         <h1 class="logo">IPOLITIC NAWP</h1>
@@ -59,7 +67,6 @@ use Fabfuel\Prophiler\Toolbar\Formatter\BenchmarkFormatter; ?>
                     </li>
                 <?php endforeach; ?>
                 <li><input name="disableJavascriptBtn" type="checkbox"> Disable client side rendering</li>
-                <li><input name="disableCookiesBtn" type="checkbox"> Disable cookies</li>
             </ul>
         </nav>
     </div>
